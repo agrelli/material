@@ -1,20 +1,40 @@
-name: ml_cpu_env
+name: ml-dev-env
 channels:
-  - defaults
   - conda-forge
+  - defaults
 dependencies:
   - python=3.9
   - numpy
   - pandas
+  - scipy
   - scikit-learn
   - matplotlib
   - seaborn
-  - jupyter
-  - tensorflow
-  - pytorch
+  - jupyterlab
+  - notebook
+  - tensorflow  # CPU-only version
+  - pytorch    # CPU-only version
   - torchvision
-  - torchaudio
+  - xgboost
+  - lightgbm
+  - h5py
+  - dask
+  - plotly
+  - altair
+  - bokeh
+  - optuna
+  - mlflow
+  - nltk
+  - spacy
+  - opencv
+  - pillow
+  - joblib
+  - tqdm
+  - pytest
+  - pip
   - pip:
-      - jupyterlab
-      - xgboost
-      - lightgbm
+      - uproot
+      - pandas-profiling
+      - transformers
+      - fastparquet
+      - pyarrow
